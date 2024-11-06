@@ -12,3 +12,11 @@ data = pd.DataFrame(
 
 st.write("This is just a sample data!!")
 st.write(data)
+
+chart_data=pd.DataFrame(
+    np.random.randn(20,4),
+    columns=["P","Q","R","T"]
+
+)
+
+st.line_chart(chart_data)
